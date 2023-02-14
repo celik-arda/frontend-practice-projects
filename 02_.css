@@ -34,6 +34,7 @@ body {
     height: 100%;
     background-color: aqua;
     z-index: 4;
+    transition: all 400ms ease-in;
 }
 
 .circle {
@@ -44,8 +45,10 @@ body {
     background-color: white;
     width: 90px;
     height: 90px;
-    border: 6px solid grey;
+    border: 11px solid grey;
     border-radius: 50%;
+    transition: all 350ms ease-in;
+    transition-delay: 400ms;
 }
 
 .circle.active {
