@@ -1,0 +1,15 @@
+//    MIXIN     //
+
+
+//    RESETTING CSS RULESETS    //
+@mixin resetting-the-css {
+    font-size: 62.5%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-decoration: none;
+    list-style: none;
+    margin-inline: 0;
+    padding-inline: 0;
+}
