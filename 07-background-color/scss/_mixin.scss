@@ -1,0 +1,22 @@
+@mixin reset-the-css-rules {
+
+    font-size: 62.5%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-decoration: none;
+    list-style: none;
+    padding-inline: 0;
+    margin-inline: 0;
+}
+
+@mixin button-icon-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
