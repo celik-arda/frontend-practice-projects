@@ -11,7 +11,7 @@ body {
     list-style: none;
     margin-inline: 0;
     padding-inline: 0;
-    background: #808080;
+    background: #555555;
     color: white;
 }
 
@@ -28,16 +28,17 @@ h3 {
 
 .faq-container {
     position: relative;
-    background-color: #d4d4d4;
+    background-color: #aaaaaa;
     border-radius: 2rem;
     margin-top: 2rem;
     padding: 2.4rem 3.2rem 2.4rem 3.2rem;
-    transition: all 900ms ease;
+    transition: all 1.5s ease;
 }
 
 .faq-container.active {
     height: 7rem;
     box-shadow: 0px 3px 6px #2a2a2a;
+    background: linear-gradient(to right,#aaaaaa,#d4d4d4);
 }
 
 .faq-question {

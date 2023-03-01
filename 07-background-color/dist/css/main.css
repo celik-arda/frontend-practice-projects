@@ -1,0 +1,68 @@
+body {
+  font-size: 62.5%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-decoration: none;
+  list-style: none;
+  padding-inline: 0;
+  margin-inline: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-property: background-Image;
+  transition-timing-function: ease-out;
+  transition-duration: 9ms; }
+
+.slider-container {
+  outline: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5; }
+  .slider-container .slide {
+    opacity: 0;
+    transition-property: background-Image, opacity;
+    transition-timing-function: ease-out;
+    transition-duration: 900ms; }
+  .slider-container .slide.active {
+    order: 2;
+    opacity: 1;
+    width: 50vw;
+    height: 50vh; }
+  .slider-container .previous-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    order: 1;
+    transition: all 150ms ease-out; }
+    .slider-container .previous-button:hover {
+      color: teal; }
+    .slider-container .previous-button:active {
+      color: yellowgreen; }
+  .slider-container .next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    order: 3;
+    transition: all 150ms ease-out; }
+    .slider-container .next-button:hover {
+      color: teal; }
+    .slider-container .next-button:active {
+      color: yellowgreen; }
+  .slider-container i {
+    font-size: 4.2rem; }
