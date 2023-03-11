@@ -6,6 +6,7 @@
 
 body{
     @include default-css-rules;
+    overflow-y: scroll;
 }
 
 nav {
@@ -16,9 +17,8 @@ nav {
     right: 0;
     background-color: $nav-bg-dark-color;
     
-    
     .container {
-        max-width: 800px;
+        max-width: 1400px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -37,6 +37,7 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 8%;
             text-decoration: none;
             list-style: none;
             
@@ -66,7 +67,7 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    z-index: -1;
+    z-index: -2;
 
     &::before {
         content: "";
@@ -76,8 +77,8 @@ nav {
         top: 0;
         left: 0;
         background-color: black;
-        opacity: 0.4;
-        z-index: 2;
+        opacity: 0.5;
+        z-index: -1;
     }
 
     .hero-message {
@@ -87,13 +88,13 @@ nav {
         z-index: 3;
 
         h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin: 1rem;
             letter-spacing: 1.5px;
         }
         p {
-            font-size: 1.2rem;
-            padding: 0.5rem 8rem;
+            font-size: 1.7rem;
+            padding: 0.5rem 16rem;
             margin: 1rem auto;
             letter-spacing: 1.7px;
         }
@@ -101,11 +102,15 @@ nav {
 }
 
 .content-section {
-    margin: 10px;
-    max-width: 700px;
-    font-size: 50px;
-    height: 2vh;
-    padding: 50px;
-    z-index: 3;
-    background-color: red;
+    padding: 1rem 1rem;
+
+    h2 {
+        font-size: 1.8rem;
+        color: black;
+    }
+    
+    p {
+        font-size: 1.3rem;
+        color: $text-content-color;
+    }
 }
