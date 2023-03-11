@@ -1,19 +1,14 @@
 //      09-sticky-navbar    //
 
 
+const navbar = document.getElementsByTagName("nav")[0];
 
-const navbar = document.getElementsByClassName("nav-area")[0];
-
-// console.log(navbar);
-const makeNavbarFixed = () => {
-
-    if (scrollY > navbar.offsetHeight + 150){
-        navbar.classList.add("active");
+window.addEventListener("scroll", () => {
+    if (window.scrollY > navbar.offsetHeight) {
+        console.log(window.scrollY);
+        navbar.classList.add("scrolled");
     }
     else {
-        navbar.classList.remove("active");
+        navbar.classList.remove("scrolled");
     }
-    console.log(scrollY);
-}
-
-window.addEventListener("scroll", makeNavbarFixed);
+})

@@ -16,6 +16,7 @@ nav {
     left: 0;
     right: 0;
     background-color: $nav-bg-dark-color;
+    transition: all 0.4s ease-out;
     
     .container {
         max-width: 1400px;
@@ -30,6 +31,7 @@ nav {
                 text-decoration: none;
                 color: $page-bg-light-color;
                 font-size: 1.8rem;
+                font-weight: bold;
             }
         }
         
@@ -52,6 +54,17 @@ nav {
                 color: $nav-red-color;
             }
 
+        }
+    }
+}
+
+nav.scrolled {
+    background-color: $page-bg-light-color;
+
+    h1, ul li {
+        
+        a {
+            color: $nav-bg-dark-color;
         }
     }
 }
