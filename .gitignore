@@ -1,9 +1,11 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/dist
 /tmp
 /out-tsc
+
+# .hintrc file
+*.hintrc
 
 # Runtime data
 pids
@@ -40,7 +42,10 @@ bower_components
 
 # IDE - VSCode
 .vscode/*
-!.vscode/settings.json
+.vscode/settings.json
+package.json
+package-lock.json
+# !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
