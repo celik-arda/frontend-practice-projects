@@ -1,0 +1,73 @@
+:root {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  padding-inline: 0;
+  margin-inline: 0;
+  overflow-x: hidden; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.toasts {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  bottom: 10rem;
+  right: 10rem;
+  width: 24vw;
+  height: 60vh; }
+  .toasts .notification {
+    width: 84%;
+    height: 10rem;
+    margin: 1.5rem auto;
+    border-radius: 2rem;
+    border: 0.5rem solid white;
+    transition: all 0.3s ease; }
+    .toasts .notification.success {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      background-color: rebeccapurple;
+      color: yellowgreen;
+      border-color: yellowgreen; }
+    .toasts .notification.info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      background-color: rebeccapurple;
+      color: orange;
+      border-color: orange; }
+    .toasts .notification.danger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      background-color: rebeccapurple;
+      color: red;
+      border-color: red; }
+
+.button {
+  font-size: 2rem;
+  padding: 1.4rem 2.2rem;
+  background-color: #5c5470;
+  color: white;
+  border: 0.3rem solid white;
+  border-radius: 0.8rem;
+  transition: all 0.2s ease; }
+  .button:active {
+    transform: scale(0.97);
+    border-color: yellowgreen;
+    color: yellowgreen; }
