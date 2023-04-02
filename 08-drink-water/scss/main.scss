@@ -1,0 +1,145 @@
+@import "variables";
+
+:root {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    text-decoration: none;
+    list-style: none;
+    padding-inline: 0;
+    margin-inline: 0;
+    color: $page-text-color;
+}
+
+body {
+    background-color: $page-bg-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.bottle {
+    width: 14%;
+    height: 90%;
+    background-color: $glass-bg-white;
+    border: 5px solid $glass-border-blue;
+    margin: 3% auto;
+    border-radius: 1rem 1rem 4.5rem 4.5rem;
+}
+
+.goal-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid black;
+    width: 100vw;
+    height: 60vh;
+
+    h1 {
+        font-size: 3.8rem;
+        margin: 0.5% auto;
+    }
+
+    p {
+        font-size: 2rem;
+        margin: 0.5% auto;
+    }
+
+    .big-bottle {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        
+        .remaining-liter {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $page-text-color;
+            margin-top: 0;            
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: $glass-border-blue;
+            font-size: 2.6rem;
+            transition: all 0.4s ease;
+            
+            .remaining-text {
+                margin-top: 28%;
+                padding: 0px 0.7rem;
+                font-size: 2.2rem;
+                font-weight: bold;
+                z-index: 4;
+            }
+        }
+
+        .have-drunk-liter {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 0%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: $glass-color-full;
+            font-size: 3rem;
+            color: $glass-border-blue;
+            transition: all 0.4s ease;
+
+            .filled-text {
+                // margin-bottom: 20%;
+                padding: 0px 0.7rem;
+                font-size: 2.2rem;
+                font-weight: bold;
+                z-index: 4;
+            }
+        }
+    }
+}
+
+.glasses-section {
+    width: 100vw;
+    height: 32vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        font-size: 1.7rem;
+    }
+
+    .glasses-area {
+        width: 36%;
+        height: 66%;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: 1.5%;
+
+        .bottle.glass {
+            width: 50%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 0.5rem 0.5rem 2rem 2rem;
+            font-size: 1.4rem;
+            color: $glass-border-blue;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .bottle.glass.active {
+            background-color: $glass-color-full;
+        }
+    }
+}
