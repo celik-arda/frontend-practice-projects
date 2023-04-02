@@ -1,0 +1,114 @@
+:root {
+  font-size: 62.5%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  padding-inline: 0;
+  margin-inline: 0;
+  overflow-x: hidden; }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  padding: 4px;
+  display: grid;
+  grid-template-rows: 3fr 2fr 1fr;
+  margin: 0 auto;
+  min-width: 240px;
+  height: 300px;
+  border-radius: 1.5rem;
+  box-shadow: 5px 13px 30px #b8b8b8; }
+
+.card-header span.loading-image {
+  width: 100%;
+  position: relative; }
+
+.card-header span {
+  background-color: #ebebeb;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.1rem 1.1rem 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 5%; }
+  .card-body span {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 1.4rem;
+    border-radius: 2rem;
+    margin: 0;
+    padding: 0.2rem 0.4rem; }
+  .card-body span.title {
+    height: 2.2rem;
+    font-weight: bold;
+    font-size: 1.2rem; }
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 4%; }
+  .card-footer .loading-footer-pic {
+    background-color: #ebebeb;
+    margin: 0;
+    width: 25%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+    background-size: cover;
+    background-position: center; }
+  .card-footer .loading-footer-text {
+    width: 50%;
+    height: 3rem;
+    padding: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 15%; }
+    .card-footer .loading-footer-text span {
+      width: 100%;
+      height: 100%; }
+
+span.animation.passive {
+  animation: none; }
+
+span.animation.active {
+  position: absolute !important;
+  overflow: hidden;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  height: 100%;
+  width: 25%;
+  background: linear-gradient(to right, #ebebeb 33%, #cfcfcf 66%, #ebebeb 100%);
+  filter: blur(8px);
+  animation: myanimate 1.5s linear infinite; }
+
+.loading-text, .loading-footer-pic, .loading-footer, .loading-footer-text, .card-header {
+  position: relative;
+  overflow: hidden; }
+
+@keyframes myanimate {
+  from {
+    left: -10%;
+    right: 20%; }
+  to {
+    left: 90%;
+    right: 0%; } }
